@@ -1,8 +1,8 @@
 from django import forms
-from .models import vendor
+from .models import Vendor
 
 
 class VendorForm(forms.ModelForm):
     class Meta:
-        model = vendor
+        model = Vendor
         fields = ['vendor_name', 'vendor_license']

@@ -83,7 +83,6 @@ class User(AbstractBaseUser):
         return user_role
 
 
-
 class UserProfile(models.Model):
     user = OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True)
     profile_picture = models.ImageField(upload_to='users/profile_pictures', blank=True, null=True)
@@ -98,6 +97,9 @@ class UserProfile(models.Model):
     longitude = models.CharField(max_length=20, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     modified_at = models.DateTimeField(auto_now=True)
+
+    def full_address(self):
+        return f'{self.address_line_1}, {self.address_line_2}'
 
     def __str__(self):
         return self.user.email
