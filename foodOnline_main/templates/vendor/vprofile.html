@@ -43,6 +43,7 @@
 																		{{profile.form.profile_picture}}
 																	</div>
 																</div>
+																<label class="text-danger">{{profile.form.profile_picture.errors}}</label>
 															</div>
 														</div>
 														<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -61,10 +62,10 @@
 																<div class="text-holder">
 																	<label>Update Cover Photo</label>
 																	<div class="upload-gallery">
-																		{{profile.form.cover_picture}}
+																		{{profile.form.cover_photo}}
 																	</div>
-
 																</div>
+																<label class="text-danger">{{profile.form.cover_photo.errors}}</label>
 															</div>
 														</div>
 														<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -85,8 +86,8 @@
 																	<div class="upload-gallery">
 																		{{vendor_form.vendor_license}}
 																	</div>
-
 																</div>
+																<label class="text-danger">{{vendor_form.vendor_license.errors}}</label>
 															</div>
 														</div>
 														<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -95,16 +96,10 @@
 																{{vendor_form.vendor_name}}
 															</div>
 														</div>
-														<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+														<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 															<div class="field-holder">
-																<label>Address Line 1 *</label>
-																{{profile_form.address_line_1}}
-															</div>
-														</div>
-														<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-															<div class="field-holder">
-																<label>Address Line 2 *</label>
-																{{profile_form.address_line_2}}
+																<label>Address  *</label>
+																{{profile_form.address}}
 															</div>
 														</div>
 														<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
