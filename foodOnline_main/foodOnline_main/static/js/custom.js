@@ -156,6 +156,7 @@ $(document).ready(function(){
     })
 
 
+
     // DELETE CART ITEM
     $('.delete_cart').on('click', function(e){
         e.preventDefault();
